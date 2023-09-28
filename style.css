@@ -2,11 +2,47 @@
   font-family: 'Sono', 'Roboto', sans-serif;
 }
 
+.logo-container {
+  width: 30%;
+  height: min(100vh - 2.2rem, 2.2*30vw);
+  background-image: url('./images/greg-rakozy-oMpAz-DN-9I-unsplash.jpg');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.logo {
+  box-sizing: border-box;
+  position: absolute;
+  top: 19%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5%;
+  background-color: rgba(0, 0, 0, 0.548);
+  padding: 16px 5%;
+}
+
+.logo > img {
+  max-width: max(5vw, 24px);
+  min-width: 40px;
+  filter: invert(100);
+}
+
+.logo > p {
+  margin: 0;
+  color: white;
+  font-size: max(5.3vw, 30px);
+  font-weight: 300;
+  text-align: center;
+}
 
 footer {
   display: flex;
   justify-content: center;
-  align-items: center;;
+  align-items: center;
 }
 
 #github-logo {
