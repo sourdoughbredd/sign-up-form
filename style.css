@@ -1,5 +1,6 @@
 :root {
   --main-bg-color: rgb(248, 248, 248);
+  --error-color: rgb(208, 0, 0);
 }
 
 * {
@@ -19,6 +20,7 @@ select {
 .content{
   display: flex;
 }
+
 
 /* Logo Banner */
 
@@ -127,7 +129,7 @@ h3 {
 }
 
 .row:last-child .error {
-  border-color: rgb(208, 0, 0);
+  border-color: var(--error-color);
 }
 
 .row:last-child .error + span::after {
@@ -135,9 +137,8 @@ h3 {
   position: absolute;
   padding-top: 4px;;
   font-size: 0.8rem;
-  color: rgb(208, 0, 0);
+  color: var(--error-color);
 }
-
 
 /* Submit Button */
 
