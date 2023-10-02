@@ -12,14 +12,16 @@ select {
 
 .content{
   display: flex;
-  height: min(100vh - 2.5rem, 2.2*30vw);
 }
 
 /* Logo Banner */
 
 .banner-container {
+  border: 2px solid magenta;
+  top: 0;
+  left: 0;
   width: 30%;
-  /* height: min(100vh - 2.2rem, 2.2*30vw); */
+  height: calc(100vh - 1rem);
   background-image: url('./images/greg-rakozy-oMpAz-DN-9I-unsplash.jpg');
   background-position: center;
   background-size: cover;
@@ -91,12 +93,13 @@ h3 {
 
 .row {
   display: flex;
-  gap: 100px;
+  gap: 20px 100px;
+  flex-wrap: wrap;
   align-items: center;
 }
 
 .row:nth-child(n + 2) {
-  margin-top: 2%;
+  margin-top: 20px;
 }
 
 /* Place label above input field */
