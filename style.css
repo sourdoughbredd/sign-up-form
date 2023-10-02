@@ -1,5 +1,11 @@
+:root {
+  --main-bg-color: rgb(240, 240, 240);
+}
+
 * {
   font-family: 'Sono', 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 button,
@@ -14,18 +20,17 @@ select {
   display: flex;
 }
 
+
 /* Logo Banner */
 
 .banner-container {
-  border: 2px solid magenta;
-  top: 0;
-  left: 0;
+  /* border: 2px solid magenta; */
   width: 30%;
-  height: calc(100vh - 1rem);
   background-image: url('./images/greg-rakozy-oMpAz-DN-9I-unsplash.jpg');
   background-position: center;
   background-size: cover;
   position: relative;
+  flex-grow: 1;
 }
 
 .logo {
@@ -51,7 +56,7 @@ select {
 .logo > p {
   margin: 0;
   color: white;
-  font-size: max(5.3vw, 30px);
+  font-size: max(5.3vw, 55px);
   font-weight: 300;
   text-align: center;
 }
@@ -67,28 +72,34 @@ select {
   flex-direction: column;
 }
 
+
+
 /* .description > p {
   margin: 0;
 } */
 
 .description {
-  background-image: linear-gradient(rgb(23, 0, 25), rgb(231, 193, 231));
+  background-color: var(--main-bg-color);
   /* height: 20%; */
-  padding: var(--form-padding);
-  padding-top: 8%;
+  padding: 12% 10% var(--form-padding) var(--form-padding);
+}
+
+.description p:last-child {
+  margin-top: 24px;
 }
 
 /* Main Form */
 
 .main-form {
-  padding: 0 var(--form-padding) var(--form-padding);
+  padding: 24px var(--form-padding);
   background-color: white;
-  border: 2px solid blue;
-  height: 35%
+  /* border: 2px solid blue; */
+  flex: 0 1 35%;
 }
 
 h3 {
   margin-bottom: 10px;
+  font-size: 1.7rem;
 }
 
 .row {
@@ -120,6 +131,53 @@ input {
   padding: 2px 8px;
 
 }
+
+/* Submit Button */
+
+.submit-container {
+  padding: 24px var(--form-padding) 200px;
+  flex: 1 1 auto;
+  /* border: 2px solid cyan; */
+  background-color:  var(--main-bg-color);
+}
+
+.submit-container input {
+  width: 200px;
+  height: 45px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: white;
+  background-color: rgb(106, 1, 120)
+}
+
+.submit-container .log-in {
+  font-size: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 12px;
+}
+
+/* Resize for narrow viewport */
+
+@media (max-width: 1000px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .banner-container {
+    width: 100vw;
+    height: max(210px, 16vh);
+    background-position: 0 70%;
+  }
+
+  .form-container {
+    width: 100%;
+  }
+}
+
 
 /* Footer */
 
