@@ -42,14 +42,14 @@ select {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 5%;
+  gap: 20px;
   background-color: rgba(0, 0, 0, 0.548);
   padding: 16px 5%;
 }
 
 .logo > img {
   max-width: max(5vw, 24px);
-  min-width: 35px;
+  min-width: 52px;
   filter: invert(100);
 }
 
@@ -86,7 +86,6 @@ select {
 .main-form {
   padding: 24px var(--form-padding) 48px;
   background-color: white;
-  /* border: 2px solid blue; */
   flex: 0 1 35%;
   z-index: 1;
   box-shadow: 0 4px 12px rgba(0,0,0, 0.2);
@@ -115,14 +114,14 @@ h3 {
 }
 
 .main-form label {
-  font-size: 1rem;
+  font-size: 1.1rem;
   padding-bottom: 6px;
 }
 
 input {
   height: 1.4rem;
   width: 100%;
-  font-size: 1rem;
+  font-size: 1.1rem;
   padding: 2px 8px;
 
 }
@@ -132,28 +131,51 @@ input {
 .submit-container {
   padding: 36px var(--form-padding) 200px;
   flex: 1 1 auto;
-  /* border: 2px solid cyan; */
   background-color:  var(--main-bg-color);
 }
 
 .submit-container input {
-  width: 220px;
+  width: 230px;
   height: 48px;
   border-radius: 8px;
   border: none;
   margin-bottom: 10px;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
   color: white;
-  background-color: rgb(106, 1, 120)
+  background-color: rgb(106, 1, 120);
+  box-shadow: 4px 4px 4px rgba(0,0,0,0.2); 
 }
 
 .submit-container .log-in {
-  font-size: 1rem;
+  font-size: 1.1rem;
   display: flex;
   flex-wrap: wrap;
   gap: 4px;
   margin-top: 12px;
 }
+
+.log-in a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4px;
+}
+
+#github-logo {
+  height: auto;
+  width: 20px;
+  margin-left: 6px;
+}
+
 
 /* Move banner for narrow viewport */
 
@@ -171,20 +193,4 @@ input {
   .form-container {
     width: 100%;
   }
-}
-
-
-/* Footer */
-
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 4px;
-}
-
-#github-logo {
-  height: auto;
-  width: 20px;
-  margin-left: 6px;
 }
