@@ -1,5 +1,5 @@
 :root {
-  --main-bg-color: rgb(240, 240, 240);
+  --main-bg-color: rgb(248, 248, 248);
 }
 
 * {
@@ -66,7 +66,6 @@ select {
 .form-container {
   --form-padding: 5%;
   width: 70%;
-  font-size: min(35px, max(20px, 1.7vw));
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -75,6 +74,7 @@ select {
 .description {
   background-color: var(--main-bg-color);
   padding: 12% 10% var(--form-padding) var(--form-padding);
+  font-size: min(30px, max(20px, 1.7vw));
 }
 
 .description p:last-child {
@@ -137,8 +137,8 @@ input {
 }
 
 .submit-container input {
-  width: 200px;
-  height: 45px;
+  width: 220px;
+  height: 48px;
   border-radius: 8px;
   border: none;
   margin-bottom: 10px;
