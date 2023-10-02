@@ -21,7 +21,6 @@ select {
   display: flex;
 }
 
-
 /* Logo Banner */
 
 .banner-container {
@@ -131,6 +130,29 @@ h3 {
 .main-form input:focus {
   outline: 2px solid rgba(103, 115, 204, 0.897);
   box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.436);
+}
+
+.main-form input + span {
+  position: relative;
+}
+
+.main-form input + span:before {
+  position: absolute;
+  font-size: 1rem;
+  top: -55px;
+  right: 0px
+}
+
+.main-form input:valid + span::before {
+  content: "✔︎";
+  color: rgb(1, 159, 1);
+}
+
+.main-form input:invalid + span::before {
+  content: "×";
+  color: red;
+  font-size: 1.5rem;
+  top: -60px;
 }
 
 .row:last-child .error {

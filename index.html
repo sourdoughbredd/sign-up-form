@@ -25,27 +25,44 @@
         <div class="row">
           <div>
             <label for="fname">First Name</label>
-            <input type="text" name="fname" id="fname">
+            <input type="text" name="fname" id="fname" 
+                    pattern="^([A-Za-z]+[,.]?[ ]?|[A-Za-z]+['\-]?)+$"
+                    title="Valid characters: a-z, A-Z, hyphen, apostrophe, space."
+                    required>
+                    <span></span>
           </div>
           <div>
             <label for="lname">Last Name</label>
-            <input type="text" name="lname" id="lname">
+            <input type="text" name="lname" id="lname" 
+            pattern="^([A-Za-z]+[,.]?[ ]?|[A-Za-z]+['\-]?)+$"
+            title="Valid characters: a-z, A-Z, hyphen, apostrophe, space."
+            required>
+            <span></span>
           </div>
         </div>
         <div class="row">
           <div>
             <label for="email">Email</label>
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email" required>
+            <span></span>
           </div>
           <div>
             <label for="phone">Phone Number</label>
-            <input type="tel" name="phone" id="phone">
+            <input type="tel" name="phone" id="phone"
+                    pattern="^\d{3}-\d{3}-\d{4}$"
+                    placeholder="###-###-####"
+                    title="Valid formats: 123-456-7890"
+                    required>
+            <span></span>
           </div>
         </div>
         <div class="row">
           <div>
             <label for="pwd">Password</label>
-            <input type="password" name="pwd" class="error" id="pwd">
+            <input type="password" name="pwd" class="error" id="pwd"
+                    pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" 
+                    title="Password must be at least 8 characters and contain at least one lowercase letter, one uppercase letter, one numeral, and one special character." 
+                    required>
             <span></span>
           </div>
           <div>
