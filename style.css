@@ -129,7 +129,7 @@ h3 {
 }
 
 .main-form input:focus {
-  outline: 2px solid rgba(106, 1, 120, 0.457);
+  outline: 2px solid rgba(103, 115, 204, 0.897);
   box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.436);
 }
 
@@ -167,14 +167,13 @@ h3 {
 }
 
 .submit-container input:focus {
-  outline: 2px solid rgb(205, 188, 2);
+  outline: 2px solid rgb(215, 0, 215);
 }
 
 .submit-container input:hover {
   opacity: 0.75;
   cursor: pointer;
 }
-
 
 .submit-container .log-in {
   font-size: 1.1rem;
@@ -221,5 +220,9 @@ footer {
 
   .form-container {
     width: 100%;
+  }
+
+  .submit-container {
+    padding-bottom: 40px
   }
 }
