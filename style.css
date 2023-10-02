@@ -20,7 +20,6 @@ select {
   display: flex;
 }
 
-
 /* Logo Banner */
 
 .banner-container {
@@ -118,13 +117,27 @@ h3 {
   padding-bottom: 6px;
 }
 
-input {
+.main-form input {
   height: 1.4rem;
   width: 100%;
   font-size: 1.1rem;
   padding: 2px 8px;
-
+  border: 1px solid #E5E7EB;
+  border-radius:  4px;
 }
+
+.row:last-child .error {
+  border-color: rgb(208, 0, 0);
+}
+
+.row:last-child .error + span::after {
+  content: '*Passwords do not match';
+  position: absolute;
+  padding-top: 4px;;
+  font-size: 0.8rem;
+  color: rgb(208, 0, 0);
+}
+
 
 /* Submit Button */
 
