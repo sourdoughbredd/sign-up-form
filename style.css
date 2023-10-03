@@ -3,6 +3,7 @@
   --light-bg-color:  rgb(17, 17, 17);
   --error-color: rgb(208, 0, 0);
   --main-font-color: rgb(230, 230, 230); 
+  --pink-color: rgb(162, 0, 135);
 }
 
 * {
@@ -57,7 +58,7 @@ body {
 }
 
 .logo > img {
-  max-width: max(5vw, 24px);
+  max-width: max(4vw, 24px);
   min-width: 52px;
   filter: invert(100);
 }
@@ -65,7 +66,7 @@ body {
 .logo > p {
   margin: 0;
   color: white;
-  font-size: max(5.3vw, 55px);
+  font-size: max(4vw, 55px);
   font-weight: 300;
   text-align: center;
 }
@@ -100,7 +101,7 @@ body {
   padding: max(30px, 3vw) var(--form-padding) max(30px, 5vw);
   background-color: var(--light-bg-color);
   z-index: 1;
-  box-shadow: 0 4px 12px rgba(0,0,0, 0.2);
+  box-shadow: 0 4px 8px rgba(157, 157, 157, 0.2);
 }
 
 h3 {
@@ -135,7 +136,7 @@ h3 {
   height: 1.4rem;
   width: 100%;
   font-size: 1.1rem;
-  padding: 2px 8px;
+  padding: 4px 24px 4px 10px;
   border: none;
   /* border: 1px solid #E5E7EB; */
   border-radius:  4px;
@@ -143,7 +144,7 @@ h3 {
 }
 
 .main-form input:focus {
-  outline: 2px solid rgba(103, 115, 204, 0.897);
+  outline: 2px solid rgba(162, 0, 135, 0.366);
   box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.436);
 }
 
@@ -153,21 +154,24 @@ h3 {
 
 .main-form input + span:before {
   position: absolute;
-  font-size: 1rem;
-  top: -55px;
-  right: 0px
 }
 
+/* input fields that are valid and not empty */
 .main-form input:not(:placeholder-shown):valid + span::before {
   content: "✔︎";
   color: rgb(1, 159, 1);
+  font-size: 1rem;
+  top: -26px;
+  right: -28px;
 }
 
+/* input fields that are invalid and not empty */
 .main-form input:not(:placeholder-shown):invalid + span::before {
   content: "×";
   color: red;
   font-size: 1.5rem;
-  top: -60px;
+  top: -30px;
+  right: -30px;
 }
 
 .row:last-child .error {
@@ -199,12 +203,12 @@ h3 {
   font-size: 1.2rem;
   font-weight: 500;
   color: white;
-  background-color: rgb(106, 1, 120);
-  box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+  background-color: var(--pink-color);
+  box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
 }
 
 .submit-container input:focus {
-  outline: 2px solid rgb(215, 0, 215);
+  outline: 2px solid rgba(255, 255, 255, 0.715);
 }
 
 .submit-container input:hover {
@@ -223,6 +227,12 @@ h3 {
 .log-in a {
   text-decoration: none;
   font-weight: 500;
+  color: var(--pink-color);
+}
+
+.log-in a:focus {
+  outline: 2px solid rgba(255, 255, 255, 0.715);
+  border-radius:4px;
 }
 
 
@@ -275,6 +285,6 @@ footer {
   }
 
   .description {
-    flex-grow: 0.3;
+    flex-grow: 0;
   }
 }
