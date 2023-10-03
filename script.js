@@ -21,21 +21,21 @@ const checkPasswordMatch = function() {
     }
 }
 
-// Toggle error class when passwords match/mismatch
-pwd.addEventListener('change', function() { 
+// Toggle error class when passwords match/mismatch and add live validity checks to all inputs
+pwd.addEventListener('input', function() {
     this.checkValidity();
     checkPasswordMatch();
 });
-pwdConfirm.addEventListener('change', checkPasswordMatch);
+pwdConfirm.addEventListener('input', checkPasswordMatch);
 
-fname.addEventListener('change', function () {
+fname.addEventListener('input', function () {
     this.checkValidity();
 });
 
-lname.addEventListener('change', function () {
+lname.addEventListener('input', function () {
     this.checkValidity();
 });
 
-phone.addEventListener('change', function () {
+phone.addEventListener('input', function () {
     this.checkValidity();
 });
