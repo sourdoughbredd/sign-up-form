@@ -87,7 +87,7 @@ body {
   justify-content: flex-end;
   background-color: var(--dark-bg-color);
   padding: 40px 10% 40px var(--form-padding);
-  font-size: min(30px, max(20px, 1.7vw));
+  font-size: min(24px, max(20px, 1.7vw));
 }
 
 .description p:last-child {
