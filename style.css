@@ -158,12 +158,12 @@ h3 {
   right: 0px
 }
 
-.main-form input:valid + span::before {
+.main-form input:not(:placeholder-shown):valid + span::before {
   content: "✔︎";
   color: rgb(1, 159, 1);
 }
 
-.main-form input:invalid + span::before {
+.main-form input:not(:placeholder-shown):invalid + span::before {
   content: "×";
   color: red;
   font-size: 1.5rem;
@@ -174,7 +174,7 @@ h3 {
   border-color: var(--error-color);
 }
 
-.row:last-child .error + span::after {
+.row:last-child .error:not(:placeholder-shown) + span::after {
   content: '*Passwords do not match';
   position: absolute;
   padding-top: 4px;;
