@@ -36,7 +36,7 @@ body {
 /* Logo Banner */
 
 .banner-container {
-  /* border: 2px solid magenta; */
+  
   width: 30%;
   background-image: url('./images/greg-rakozy-oMpAz-DN-9I-unsplash.jpg');
   background-position: center;
@@ -197,7 +197,7 @@ h3 {
 .row:last-child .error:not(:placeholder-shown) + span::after {
   content: '*Passwords do not match';
   position: absolute;
-  padding-top: 4px;;
+  padding-top: 4px;
   font-size: 0.8rem;
   color: var(--error-color);
 }
