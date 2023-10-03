@@ -71,6 +71,21 @@ body {
   text-align: center;
 }
 
+.attribution {
+  position: absolute;
+  width: 100%;
+  top: 96%;
+  left: 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.548);
+  font-size: 0.8rem;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--pink-color);
+}
+
 /* Form Header */
 
 .form-container {
@@ -277,6 +292,10 @@ footer {
   .logo {
     top: 20%;
     height: 60%;
+  }
+
+  .attribution {
+    top: 87%;
   }
 
   .form-container {
