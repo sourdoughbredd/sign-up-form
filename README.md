@@ -6,6 +6,18 @@ A simple and responsive sign-up form with live form validation.
 
 This project is a responsive sign-up form built with HTML, CSS, and JavaScript. It includes live form validation with a simple and intuitive user feedback.
 
+## Table of Contents
+
+- [Description](#description)
+- [Screenshots](#screenshots)
+- [Preview](#preview)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Tech Stack](#tech-stack)
+- [License](#license)
+- [Contact Information](#contact-information)
+
 ## Screenshots
 
 ### Wide View
@@ -19,18 +31,6 @@ This project is a responsive sign-up form built with HTML, CSS, and JavaScript. 
 ## Preview
 
 You can view a live preview of the page [here](https://sourdoughbredd.github.io/sign-up-form/).
-
-## Table of Contents
-
-- [Description](#description)
-- [Screenshots](#screenshots)
-- [Preview](#preview)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Tech Stack](#tech-stack)
-- [License](#license)
-- [Contact Information](#contact-information)
 
 ## Features
 
